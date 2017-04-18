@@ -1,0 +1,60 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:baselineAligned="false"
+    android:divider="?android:attr/dividerHorizontal"
+    android:orientation="horizontal"
+    android:showDividers="middle"
+    tools:context="edu.depaul.csc472.nicolay_m_finalproject.SoundListActivity">
+
+    <!--
+    This layout is a two-pane layout for the Sounds
+    master/detail flow.
+    See res/values-large/refs.xml and
+    res/values-w900dp/refs.xml for an example of layout aliases
+    that replace the single-pane version of the layout with
+    this two-pane version.
+
+    For more on layout aliases, see:
+    http://developer.android.com/training/multiscreen/screensizes.html#TaskUseAliasFilters
+    -->
+
+    <FrameLayout
+        android:id="@+id/sound_detail_container"
+        android:layout_height="0dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="350dp" />
+
+    <Button
+        android:text="@string/finish"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/two_pane_finish"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/sound_list"
+        app:layout_constraintRight_toRightOf="@+id/sound_list"
+        app:layout_constraintLeft_toLeftOf="@+id/sound_list" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/sound_list"
+        android:name="edu.depaul.csc472.nicolay_m_finalproject.SoundListFragment"
+        android:layout_height="407dp"
+        app:layoutManager="LinearLayoutManager"
+        tools:context="edu.depaul.csc472.nicolay_m_finalproject.SoundListActivity"
+        tools:listitem="@layout/sound_list_content"
+        android:layout_width="371dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

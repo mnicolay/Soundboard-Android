@@ -1,0 +1,253 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sound_detail_constraint"
+    style="?android:attr/textAppearanceLarge"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textIsSelectable="true"
+    tools:context="edu.depaul.csc472.nicolay_m_finalproject.SoundDetailFragment" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sound_detail"
+        android:text="@string/selectedSound"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="74dp"
+        android:id="@+id/detailButton4"
+        app:layout_constraintTop_toBottomOf="@+id/detailButton1"
+        app:layout_constraintLeft_toLeftOf="@+id/detailButton1"
+        app:layout_constraintRight_toRightOf="@+id/detailButton1"
+        android:layout_marginTop="24dp"
+        app:layout_constraintHorizontal_bias="1.0" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="74dp"
+        android:id="@+id/detailButton7"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/detailButton4"
+        app:layout_constraintLeft_toLeftOf="@+id/detailButton4"
+        app:layout_constraintRight_toRightOf="@+id/detailButton4"
+        app:layout_constraintHorizontal_bias="1.0" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="74dp"
+        android:id="@+id/detailButton8"
+        app:layout_constraintTop_toTopOf="@+id/detailButton7"
+        app:layout_constraintBottom_toBottomOf="@+id/detailButton7"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginStart="24dp"
+        app:layout_constraintLeft_toRightOf="@+id/detailButton7"
+        android:layout_marginLeft="24dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="74dp"
+        android:id="@+id/detailButton6"
+        app:layout_constraintTop_toTopOf="@+id/detailButton7"
+        app:layout_constraintRight_toLeftOf="@+id/detailButton7"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/detailButton7"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="74dp"
+        android:id="@+id/detailButton2"
+        app:layout_constraintTop_toTopOf="@+id/detailButton1"
+        app:layout_constraintBottom_toBottomOf="@+id/detailButton1"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/detailButton1"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="74dp"
+        android:id="@+id/detailButton0"
+        app:layout_constraintRight_toLeftOf="@+id/detailButton1"
+        app:layout_constraintTop_toTopOf="@+id/detailButton1"
+        app:layout_constraintBottom_toBottomOf="@+id/detailButton1"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="74dp"
+        android:id="@+id/detailButton3"
+        app:layout_constraintTop_toTopOf="@+id/detailButton4"
+        app:layout_constraintRight_toLeftOf="@+id/detailButton4"
+        app:layout_constraintBottom_toBottomOf="@+id/detailButton4"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="74dp"
+        android:id="@+id/detailButton5"
+        app:layout_constraintTop_toTopOf="@+id/detailButton4"
+        app:layout_constraintBottom_toBottomOf="@+id/detailButton4"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginStart="24dp"
+        app:layout_constraintLeft_toRightOf="@+id/detailButton4"
+        android:layout_marginLeft="24dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="74dp"
+        app:layout_constraintVertical_bias="1.0"
+        android:id="@+id/detailButton1"
+        app:layout_constraintLeft_toLeftOf="@+id/sound_detail"
+        app:layout_constraintTop_toBottomOf="@+id/sound_detail"
+        android:layout_marginTop="56dp"
+        app:layout_constraintRight_toRightOf="@+id/sound_detail" />
+
+
+    <!--<RadioGroup
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailButtonChoices"
+        app:layout_constraintLeft_toLeftOf="@+id/sound_detail"
+        app:layout_constraintRight_toRightOf="@+id/sound_detail"
+        app:layout_constraintTop_toBottomOf="@+id/sound_detail"
+        android:layout_marginTop="64dp">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/configRadio0"
+                android:layout_weight="0.47"
+                app:layout_constraintRight_toLeftOf="@+id/configRadio1"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                app:layout_constraintTop_toTopOf="@+id/configRadio1"
+                app:layout_constraintBottom_toBottomOf="@+id/configRadio1"
+                app:layout_constraintVertical_bias="0.0"
+                android:background="@drawable/button_background"
+                android:button="@android:color/transparent"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/configRadio5"
+                android:background="@drawable/button_background"
+                android:button="@android:color/transparent"
+                app:layout_constraintTop_toTopOf="@+id/configRadio4"
+                app:layout_constraintBottom_toBottomOf="@+id/configRadio4"
+                app:layout_constraintVertical_bias="1.0"
+                app:layout_constraintLeft_toRightOf="@+id/configRadio4"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/configRadio4"
+                android:background="@drawable/button_background"
+                android:button="@android:color/transparent"
+                app:layout_constraintTop_toBottomOf="@+id/configRadio1"
+                app:layout_constraintLeft_toLeftOf="@+id/configRadio1"
+                app:layout_constraintRight_toRightOf="@+id/configRadio1"
+                android:layout_marginTop="32dp"
+                app:layout_constraintHorizontal_bias="0.0" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/configRadio8"
+                android:background="@drawable/button_background"
+                android:button="@android:color/transparent"
+                app:layout_constraintTop_toTopOf="@+id/configRadio7"
+                app:layout_constraintBottom_toBottomOf="@+id/configRadio7"
+                app:layout_constraintVertical_bias="1.0"
+                app:layout_constraintLeft_toRightOf="@+id/configRadio7"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/configRadio6"
+                android:background="@drawable/button_background"
+                android:button="@android:color/transparent"
+                app:layout_constraintRight_toLeftOf="@+id/configRadio7"
+                app:layout_constraintTop_toTopOf="@+id/configRadio7"
+                app:layout_constraintBottom_toBottomOf="@+id/configRadio7"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/configRadio7"
+                android:background="@drawable/button_background"
+                android:button="@android:color/transparent"
+                android:layout_marginTop="32dp"
+                app:layout_constraintTop_toBottomOf="@+id/configRadio4"
+                app:layout_constraintLeft_toLeftOf="@+id/configRadio4"
+                app:layout_constraintRight_toRightOf="@+id/configRadio4"
+                app:layout_constraintHorizontal_bias="0.0" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/configRadio2"
+                android:background="@drawable/button_background"
+                android:button="@android:color/transparent"
+                android:layout_marginStart="32dp"
+                app:layout_constraintLeft_toRightOf="@+id/configRadio1"
+                android:layout_marginLeft="32dp"
+                app:layout_constraintTop_toTopOf="@+id/configRadio1"
+                app:layout_constraintBottom_toBottomOf="@+id/configRadio1"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <RadioButton
+                android:id="@+id/configRadio1"
+                android:background="@drawable/button_background"
+                android:button="@android:color/transparent"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/configRadio3"
+                android:background="@drawable/button_background"
+                android:button="@android:color/transparent"
+                app:layout_constraintRight_toLeftOf="@+id/configRadio4"
+                app:layout_constraintTop_toTopOf="@+id/configRadio4"
+                app:layout_constraintBottom_toBottomOf="@+id/configRadio4"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </android.support.constraint.ConstraintLayout>
+    </RadioGroup>-->
+</android.support.constraint.ConstraintLayout>

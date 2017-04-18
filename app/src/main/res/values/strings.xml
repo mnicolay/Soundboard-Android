@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Nicolay_m_FinalProject</string>
+    <string name="menu">Menu</string>
+    <string name="mainMenu">Main Menu</string>
+    <string name="soundboard">Soundboard</string>
+    <string name="config">Configure Sounds</string>
+    <string name="fileUpload">File Upload</string>
+    <string name="file">File:</string>
+    <string name="noFile">No File Selected</string>
+    <string name="browse">Browse</string>
+    <string name="label">Label:</string>
+    <string name="enterLabel">Give your sound a name</string>
+    <string name="description">Description:</string>
+    <string name="enterDesc">Enter a short description of your sound</string>
+    <string name="cancel">Cancel</string>
+    <string name="finish">Finish</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="save">Save</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="title_sound_list">Choose a Sound</string>
+    <string name="title_sound_detail">Assign Sound to a Button</string>
+    <string name="no_button">No button assignment</string>
+    <string name="button_assign">Assigned to button %d</string>
+    <string name="selectedSound">Selected %s, now assign a button.</string>
+</resources>
